@@ -468,6 +468,14 @@
 
   <build>
     <defaultGoal>test</defaultGoal>
+    <pluginManagement>
+      <plugins>
+	    <plugin>
+	      <artifactId>maven-surefire-plugin</artifactId>
+	      <version>3.0.0-M6-20220114.145803-3</version>
+	    </plugin>
+	  </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
@@ -497,7 +505,6 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M1</version>
         <configuration>
           <systemPropertyVariables>
             <mavenRepoPath>${settings.localRepository}</mavenRepoPath>
