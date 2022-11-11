@@ -39,7 +39,7 @@ public class SupportCorePluginTest extends AbstractJUnitTest {
     @Issue("JENKINS-27669")
     @Test public void emptyLogger() throws Exception {
         JenkinsLogger logger = jenkins.createLogger("test", Collections.singletonMap("", Level.ALL));
-        assertFalse(logger.isEmpty());
+        assertTrue(logger.isEmpty());
     }
 
 }
